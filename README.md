@@ -6,6 +6,7 @@
 ## Required
 - JDK 1.8+
 - 스프링 프레임워크를 사용해야 합니다.
+- Slack Incoming WebHooks
 - 계속해서 발전해 나아가려는 프로젝트 입니다 적극적인 Pull Request 환영합니다 :) 
 
 ## How to use it
@@ -16,6 +17,9 @@ public class Log2SlackConfiguration extends Log2SlackAppConfiguration {
 
 }
 ```
+
+**Slack Incoming WebHooks 설정**
+![Image of WebHooks](/images/1.png)
 
 **application.properties or application.yml 작성**
 ```yaml
