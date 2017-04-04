@@ -1,0 +1,3 @@
+slack:
+  web-hook-url: slack webHookUrl
+  channel: slack channel
