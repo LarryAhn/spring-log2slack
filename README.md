@@ -19,7 +19,8 @@ public class Log2SlackConfiguration extends Log2SlackAppConfiguration {
 ```
 
 **Slack Incoming WebHooks 설정**
-![Image of WebHooks](/images/1.png)
+![Image of WebHooks1](/images/1.png)
+![Image of WebHooks2](/images/2.png)
 
 **application.properties or application.yml 작성**
 ```yaml
@@ -47,6 +48,8 @@ public List<Member> getMembers() {
     return blackPink;
 }
 ```
+아래와 같이 Slack 에 로그메세지를 받을 수 있습니다.
+![Image of Slack](/images/3.png)
 
 ## Example Source
 아래 project 는 spring-log2slack 을 사용한 example project 입니다.
