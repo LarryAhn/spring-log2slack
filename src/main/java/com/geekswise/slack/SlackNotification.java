@@ -42,13 +42,10 @@ public class SlackNotification {
     public static class Slack {
         private String text;
         private String channel;
-        private List<SlackMessage> attachments;
+        private List<SlackMessage> attachments = Lists.newArrayList();
 
-        void addAttachment(SlackMessage attachement) {
-            if (this.attachments == null) {
-                this.attachments = Lists.newArrayList();
-            }
-            this.attachments.add(attachement);
+        void addAttachment(SlackMessage attachment) {
+            this.attachments.add(attachment);
         }
     }
 
