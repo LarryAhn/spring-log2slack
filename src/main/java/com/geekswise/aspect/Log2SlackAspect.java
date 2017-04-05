@@ -27,6 +27,14 @@ public class Log2SlackAspect {
     @Autowired
     private SlackConfiguration slackConfiguration;
 
+    /**
+     * log2Slack
+     * INPUT OUTPUT Log to Slack
+     *
+     * @param joinPoint
+     * @return
+     * @throws Throwable
+     */
     @Around("@annotation(Log2Slack)")
     public Object log2Slack(ProceedingJoinPoint joinPoint) throws Throwable {
 
