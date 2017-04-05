@@ -10,6 +10,21 @@
 - 계속해서 발전해 나아가려는 프로젝트 입니다 적극적인 Pull Request 환영합니다 :) 
 
 ## How to use it
+
+**Local Repository 등록 및 dependency 추가 **
+```
+// git clone
+$ git clone https://github.com/LawrenceAhn/spring-log2slack && cd spring-log2slack
+$ mvn install
+
+// add pom.xml
+<dependency>
+    <groupId>com.geekswise</groupId>
+    <artifactId>spring-log2slack</artifactId>
+    <version>1.0</version>
+</dependency>
+```
+
 **아래 Configuration 파일 작성**
 ```java
 @Configuration
