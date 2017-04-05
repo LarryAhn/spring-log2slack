@@ -11,12 +11,13 @@
 
 ## How to use it
 
-**Local Repository 등록 및 dependency 추가 **
-```
+**Local Repository 등록 및 dependency 추가**
+```bash
 // git clone
 $ git clone https://github.com/LawrenceAhn/spring-log2slack && cd spring-log2slack
 $ mvn install
-
+```
+```xml
 // add pom.xml
 <dependency>
     <groupId>com.geekswise</groupId>
