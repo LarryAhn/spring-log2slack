@@ -17,6 +17,14 @@ import org.springframework.stereotype.Service;
 @Slf4j
 public class ExecutionTimeLogAspect {
 
+    /**
+     * ExecutionTimeLog
+     * 메소드 실행 시간 측정
+     *
+     * @param joinPoint
+     * @return
+     * @throws Throwable
+     */
     @Around("@annotation(ExecutionTimeLog)")
     public Object ExecutionTimeLog(ProceedingJoinPoint joinPoint) throws Throwable {
         long start = System.currentTimeMillis();
