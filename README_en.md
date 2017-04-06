@@ -47,8 +47,8 @@ slack.channel={replace your slack channel}
 ```yaml
 # ex) application.yml
 slack:
-  web-hook-url: {}replace slack webHookUrl}
-  channel: {}replace slack channel}
+  web-hook-url: {replace slack webHookUrl}
+  channel: {replace slack channel}
 ```
 
 **5. Declare @Log2Slack annotation to method, you can receive log message on Slack.**
