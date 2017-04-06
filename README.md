@@ -71,5 +71,10 @@ public List<Member> getMembers() {
 아래 project 는 spring-log2slack 을 사용한 example project 입니다.
 - [log2slack-example](https://github.com/LawrenceAhn/log2slack-example)
 
+## To Do
+- 로그 타입에 따른 슬랙 메세지 색상 변경 등
+- 프리티 프린트 로그
+- 기타 등등..
+
 ## License
 spring-log2slack is MIT License.
