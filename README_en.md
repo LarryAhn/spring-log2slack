@@ -1,17 +1,16 @@
 # spring-log2slack
 
 ## About
-- @Log2Slack 애노테이션만 선언하면 로그 메세지를 슬랙으로 받을 수 있습니다.
+- Declare only @Log2Slack annotation. You can receive log message on Slack.
 
 ## Required
 - JDK 1.8+
-- 스프링 프레임워크를 사용해야 합니다.
+- using Spring Framework
 - Slack Incoming WebHooks
-- 계속해서 발전해 나아가려는 프로젝트 입니다 적극적인 Pull Request 환영합니다 :) 
 
 ## How to use it
 
-**Local Repository 등록 및 dependency 추가**
+**1. Register Local Repository, add dependency**
 ```bash
 // git clone
 $ git clone https://github.com/LawrenceAhn/spring-log2slack && cd spring-log2slack
@@ -26,7 +25,7 @@ $ mvn install
 </dependency>
 ```
 
-**아래 Configuration 파일 작성**
+**2. Creating a Configuration File in your project.**
 ```java
 @Configuration
 public class Log2SlackConfiguration extends Log2SlackAppConfiguration {
@@ -34,25 +33,25 @@ public class Log2SlackConfiguration extends Log2SlackAppConfiguration {
 }
 ```
 
-**Slack Incoming WebHooks 설정**
+**3. Slack Incoming WebHooks Setup**
 ![Image of WebHooks1](/images/1.png)
 ![Image of WebHooks2](/images/2.png)
 
-**application.properties or application.yml 작성**
+**4. Create application.properties or application.yml**
 ```yaml
-# application.properties 예제
-slack.web-hook-url=slack webHookUrl 주소
-slack.channel=slack channel 이름
+# ex) application.properties
+slack.web-hook-url={replace your slack webHookUrl}
+slack.channel={replace your slack channel}
 ```
 
 ```yaml
-# application.yml 예제
+# ex) application.yml
 slack:
-  web-hook-url: slack webHookUrl 주소
-  channel: slack channel 이름
+  web-hook-url: {}replace slack webHookUrl}
+  channel: {}replace slack channel}
 ```
 
-로그 메세지를 받고 싶은 메소드에 **@Log2Slack 애노테이션을 선언**합니다.
+**5. Declare @Log2Slack annotation to method, you can receive log message on Slack.**
 ```java
 @Log2Slack
 public List<Member> getMembers() {
@@ -64,17 +63,12 @@ public List<Member> getMembers() {
     return blackPink;
 }
 ```
-아래와 같이 Slack 에 로그메세지를 받을 수 있습니다.
+Nice! you can receive log message on Slack.
 ![Image of Slack](/images/3.png)
 
 ## Example Source
-아래 project 는 spring-log2slack 을 사용한 example project 입니다.
+This project is an example project using spring-log2slack.
 - [log2slack-example](https://github.com/LawrenceAhn/log2slack-example)
-
-## To Do
-- 로그 타입에 따른 슬랙 메세지 색상 변경 등
-- 프리티 프린트 로그
-- 기타 등등..
 
 ## License
 spring-log2slack is MIT License.
