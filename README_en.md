@@ -13,7 +13,7 @@
 **1. Register Local Repository, add dependency**
 ```bash
 // git clone
-$ git clone https://github.com/LawrenceAhn/spring-log2slack && cd spring-log2slack
+$ git clone https://github.com/LarryAhn/spring-log2slack && cd spring-log2slack
 $ mvn install
 ```
 ```xml
