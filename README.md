@@ -14,7 +14,7 @@
 **Local Repository 등록 및 dependency 추가**
 ```bash
 // git clone
-$ git clone https://github.com/LawrenceAhn/spring-log2slack && cd spring-log2slack
+$ git clone https://github.com/LarryAhn/spring-log2slack && cd spring-log2slack
 $ mvn install
 ```
 ```xml
